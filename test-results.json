@@ -1,0 +1,493 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/manur/OneDrive/Desktop/playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 120000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/manur/OneDrive/Desktop/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/manur/OneDrive/Desktop/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/manur/OneDrive/Desktop/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/manur/OneDrive/Desktop/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Users/manur/OneDrive/Desktop/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/manur/OneDrive/Desktop/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "iteration.spec.ts",
+      "file": "iteration.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Iteration test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4479,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    3) <a href=\"/add_remove_elements/\">Add/Remove Elements</a> aka getByRole('link', { name: 'Add/Remove Elements' })\n    4) <a href=\"/basic_auth\">Basic Auth</a> aka getByRole('link', { name: 'Basic Auth' })\n    5) <a href=\"/broken_images\">Broken Images</a> aka getByRole('link', { name: 'Broken Images' })\n    6) <a href=\"/challenging_dom\">Challenging DOM</a> aka getByRole('link', { name: 'Challenging DOM' })\n    7) <a href=\"/checkboxes\">Checkboxes</a> aka getByRole('link', { name: 'Checkboxes' })\n    8) <a href=\"/context_menu\">Context Menu</a> aka getByRole('link', { name: 'Context Menu' })\n    9) <a href=\"/digest_auth\">Digest Authentication</a> aka getByRole('link', { name: 'Digest Authentication' })\n    10) <a href=\"/disappearing_elements\">Disappearing Elements</a> aka getByRole('link', { name: 'Disappearing Elements' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    3) <a href=\"/add_remove_elements/\">Add/Remove Elements</a> aka getByRole('link', { name: 'Add/Remove Elements' })\n    4) <a href=\"/basic_auth\">Basic Auth</a> aka getByRole('link', { name: 'Basic Auth' })\n    5) <a href=\"/broken_images\">Broken Images</a> aka getByRole('link', { name: 'Broken Images' })\n    6) <a href=\"/challenging_dom\">Challenging DOM</a> aka getByRole('link', { name: 'Challenging DOM' })\n    7) <a href=\"/checkboxes\">Checkboxes</a> aka getByRole('link', { name: 'Checkboxes' })\n    8) <a href=\"/context_menu\">Context Menu</a> aka getByRole('link', { name: 'Context Menu' })\n    9) <a href=\"/digest_auth\">Digest Authentication</a> aka getByRole('link', { name: 'Digest Authentication' })\n    10) <a href=\"/disappearing_elements\">Disappearing Elements</a> aka getByRole('link', { name: 'Disappearing Elements' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n\n    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:14:49",
+                    "location": {
+                      "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                      "column": 49,
+                      "line": 14
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 13 |\u001b[39m       page\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m`a:has-text(\"${linkText}\")`\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     ])\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1, h2, h3'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                        "column": 49,
+                        "line": 14
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    3) <a href=\"/add_remove_elements/\">Add/Remove Elements</a> aka getByRole('link', { name: 'Add/Remove Elements' })\n    4) <a href=\"/basic_auth\">Basic Auth</a> aka getByRole('link', { name: 'Basic Auth' })\n    5) <a href=\"/broken_images\">Broken Images</a> aka getByRole('link', { name: 'Broken Images' })\n    6) <a href=\"/challenging_dom\">Challenging DOM</a> aka getByRole('link', { name: 'Challenging DOM' })\n    7) <a href=\"/checkboxes\">Checkboxes</a> aka getByRole('link', { name: 'Checkboxes' })\n    8) <a href=\"/context_menu\">Context Menu</a> aka getByRole('link', { name: 'Context Menu' })\n    9) <a href=\"/digest_auth\">Digest Authentication</a> aka getByRole('link', { name: 'Digest Authentication' })\n    10) <a href=\"/disappearing_elements\">Disappearing Elements</a> aka getByRole('link', { name: 'Disappearing Elements' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n\n\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 13 |\u001b[39m       page\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m`a:has-text(\"${linkText}\")`\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     ])\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1, h2, h3'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:14:49\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-22T11:26:56.095Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                    "column": 49,
+                    "line": 14
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7522,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    3) <a href=\"/add_remove_elements/\">Add/Remove Elements</a> aka getByRole('link', { name: 'Add/Remove Elements' })\n    4) <a href=\"/basic_auth\">Basic Auth</a> aka getByRole('link', { name: 'Basic Auth' })\n    5) <a href=\"/broken_images\">Broken Images</a> aka getByRole('link', { name: 'Broken Images' })\n    6) <a href=\"/challenging_dom\">Challenging DOM</a> aka getByRole('link', { name: 'Challenging DOM' })\n    7) <a href=\"/checkboxes\">Checkboxes</a> aka getByRole('link', { name: 'Checkboxes' })\n    8) <a href=\"/context_menu\">Context Menu</a> aka getByRole('link', { name: 'Context Menu' })\n    9) <a href=\"/digest_auth\">Digest Authentication</a> aka getByRole('link', { name: 'Digest Authentication' })\n    10) <a href=\"/disappearing_elements\">Disappearing Elements</a> aka getByRole('link', { name: 'Disappearing Elements' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    3) <a href=\"/add_remove_elements/\">Add/Remove Elements</a> aka getByRole('link', { name: 'Add/Remove Elements' })\n    4) <a href=\"/basic_auth\">Basic Auth</a> aka getByRole('link', { name: 'Basic Auth' })\n    5) <a href=\"/broken_images\">Broken Images</a> aka getByRole('link', { name: 'Broken Images' })\n    6) <a href=\"/challenging_dom\">Challenging DOM</a> aka getByRole('link', { name: 'Challenging DOM' })\n    7) <a href=\"/checkboxes\">Checkboxes</a> aka getByRole('link', { name: 'Checkboxes' })\n    8) <a href=\"/context_menu\">Context Menu</a> aka getByRole('link', { name: 'Context Menu' })\n    9) <a href=\"/digest_auth\">Digest Authentication</a> aka getByRole('link', { name: 'Digest Authentication' })\n    10) <a href=\"/disappearing_elements\">Disappearing Elements</a> aka getByRole('link', { name: 'Disappearing Elements' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n\n    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:14:49",
+                    "location": {
+                      "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                      "column": 49,
+                      "line": 14
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 13 |\u001b[39m       page\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m`a:has-text(\"${linkText}\")`\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     ])\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1, h2, h3'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                        "column": 49,
+                        "line": 14
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    3) <a href=\"/add_remove_elements/\">Add/Remove Elements</a> aka getByRole('link', { name: 'Add/Remove Elements' })\n    4) <a href=\"/basic_auth\">Basic Auth</a> aka getByRole('link', { name: 'Basic Auth' })\n    5) <a href=\"/broken_images\">Broken Images</a> aka getByRole('link', { name: 'Broken Images' })\n    6) <a href=\"/challenging_dom\">Challenging DOM</a> aka getByRole('link', { name: 'Challenging DOM' })\n    7) <a href=\"/checkboxes\">Checkboxes</a> aka getByRole('link', { name: 'Checkboxes' })\n    8) <a href=\"/context_menu\">Context Menu</a> aka getByRole('link', { name: 'Context Menu' })\n    9) <a href=\"/digest_auth\">Digest Authentication</a> aka getByRole('link', { name: 'Digest Authentication' })\n    10) <a href=\"/disappearing_elements\">Disappearing Elements</a> aka getByRole('link', { name: 'Disappearing Elements' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n\n\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 13 |\u001b[39m       page\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m`a:has-text(\"${linkText}\")`\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     ])\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1, h2, h3'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:14:49\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-03-22T11:27:03.575Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-chromium-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                    "column": 49,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "24809e312ae230edae75-d1928e7e3c10cc95e48c",
+          "file": "iteration.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Iteration test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 5764,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n\n    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:14:49",
+                    "location": {
+                      "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                      "column": 49,
+                      "line": 14
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 13 |\u001b[39m       page\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m`a:has-text(\"${linkText}\")`\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     ])\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1, h2, h3'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                        "column": 49,
+                        "line": 14
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n\n\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 13 |\u001b[39m       page\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m`a:has-text(\"${linkText}\")`\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     ])\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1, h2, h3'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:14:49\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-22T11:26:56.095Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                    "column": 49,
+                    "line": 14
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 5352,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n\n    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:14:49",
+                    "location": {
+                      "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                      "column": 49,
+                      "line": 14
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 13 |\u001b[39m       page\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m`a:has-text(\"${linkText}\")`\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     ])\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1, h2, h3'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                        "column": 49,
+                        "line": 14
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n\n\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 13 |\u001b[39m       page\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m`a:has-text(\"${linkText}\")`\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     ])\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1, h2, h3'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:14:49\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-03-22T11:27:07.076Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-firefox-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-firefox-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-firefox-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                    "column": 49,
+                    "line": 14
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "24809e312ae230edae75-f39aa02c3d092630c1d5",
+          "file": "iteration.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Iteration test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3807,
+                  "error": {
+                    "message": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    3) <a href=\"/add_remove_elements/\">Add/Remove Elements</a> aka getByRole('link', { name: 'Add/Remove Elements' })\n    4) <a href=\"/basic_auth\">Basic Auth</a> aka getByRole('link', { name: 'Basic Auth' })\n    5) <a href=\"/broken_images\">Broken Images</a> aka getByRole('link', { name: 'Broken Images' })\n    6) <a href=\"/challenging_dom\">Challenging DOM</a> aka getByRole('link', { name: 'Challenging DOM' })\n    7) <a href=\"/checkboxes\">Checkboxes</a> aka getByRole('link', { name: 'Checkboxes' })\n    8) <a href=\"/context_menu\">Context Menu</a> aka getByRole('link', { name: 'Context Menu' })\n    9) <a href=\"/digest_auth\">Digest Authentication</a> aka getByRole('link', { name: 'Digest Authentication' })\n    10) <a href=\"/disappearing_elements\">Disappearing Elements</a> aka getByRole('link', { name: 'Disappearing Elements' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    3) <a href=\"/add_remove_elements/\">Add/Remove Elements</a> aka getByRole('link', { name: 'Add/Remove Elements' })\n    4) <a href=\"/basic_auth\">Basic Auth</a> aka getByRole('link', { name: 'Basic Auth' })\n    5) <a href=\"/broken_images\">Broken Images</a> aka getByRole('link', { name: 'Broken Images' })\n    6) <a href=\"/challenging_dom\">Challenging DOM</a> aka getByRole('link', { name: 'Challenging DOM' })\n    7) <a href=\"/checkboxes\">Checkboxes</a> aka getByRole('link', { name: 'Checkboxes' })\n    8) <a href=\"/context_menu\">Context Menu</a> aka getByRole('link', { name: 'Context Menu' })\n    9) <a href=\"/digest_auth\">Digest Authentication</a> aka getByRole('link', { name: 'Digest Authentication' })\n    10) <a href=\"/disappearing_elements\">Disappearing Elements</a> aka getByRole('link', { name: 'Disappearing Elements' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n\n    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:14:49",
+                    "location": {
+                      "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                      "column": 49,
+                      "line": 14
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 13 |\u001b[39m       page\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m`a:has-text(\"${linkText}\")`\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     ])\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1, h2, h3'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                        "column": 49,
+                        "line": 14
+                      },
+                      "message": "Error: locator.click: Error: strict mode violation: locator('a:has-text(\"\")') resolved to 46 elements:\n    1) <a href=\"https://github.com/tourdedave/the-internet\">…</a> aka getByRole('link', { name: 'Fork me on GitHub' })\n    2) <a href=\"/abtest\">A/B Testing</a> aka getByRole('link', { name: 'A/B Testing' })\n    3) <a href=\"/add_remove_elements/\">Add/Remove Elements</a> aka getByRole('link', { name: 'Add/Remove Elements' })\n    4) <a href=\"/basic_auth\">Basic Auth</a> aka getByRole('link', { name: 'Basic Auth' })\n    5) <a href=\"/broken_images\">Broken Images</a> aka getByRole('link', { name: 'Broken Images' })\n    6) <a href=\"/challenging_dom\">Challenging DOM</a> aka getByRole('link', { name: 'Challenging DOM' })\n    7) <a href=\"/checkboxes\">Checkboxes</a> aka getByRole('link', { name: 'Checkboxes' })\n    8) <a href=\"/context_menu\">Context Menu</a> aka getByRole('link', { name: 'Context Menu' })\n    9) <a href=\"/digest_auth\">Digest Authentication</a> aka getByRole('link', { name: 'Digest Authentication' })\n    10) <a href=\"/disappearing_elements\">Disappearing Elements</a> aka getByRole('link', { name: 'Disappearing Elements' })\n    ...\n\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"\")')\u001b[22m\n\n\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n \u001b[90m 13 |\u001b[39m       page\u001b[33m.\u001b[39mwaitForNavigation()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m       page\u001b[33m.\u001b[39mlocator(\u001b[32m`a:has-text(\"${linkText}\")`\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m     ])\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1, h2, h3'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:14:49\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-22T11:27:13.515Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                    "column": 49,
+                    "line": 14
+                  }
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3563,
+                  "error": {
+                    "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m\n\n    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:4:14",
+                    "location": {
+                      "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                      "column": 14,
+                      "line": 4
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test(\u001b[32m'Iteration test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://the-internet.herokuapp.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m\n \u001b[90m 6 |\u001b[39m   \u001b[36mconst\u001b[39m links \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m   \u001b[36mconst\u001b[39m count \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m links\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                        "column": 14,
+                        "line": 4
+                      },
+                      "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://the-internet.herokuapp.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 2 |\u001b[39m\n \u001b[90m 3 |\u001b[39m test(\u001b[32m'Iteration test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://the-internet.herokuapp.com/\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 5 |\u001b[39m\n \u001b[90m 6 |\u001b[39m   \u001b[36mconst\u001b[39m links \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'a'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m   \u001b[36mconst\u001b[39m count \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m links\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts:4:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-03-22T11:27:19.405Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\test-results\\iteration-Iteration-test-webkit-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\manur\\OneDrive\\Desktop\\playwright\\tests\\iteration.spec.ts",
+                    "column": 14,
+                    "line": 4
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "24809e312ae230edae75-07395d13464d56f24b24",
+          "file": "iteration.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-22T11:26:54.697Z",
+    "duration": 28480.529,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

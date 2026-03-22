@@ -1,0 +1,11 @@
+import {test,expect} from "@playwright/test";
+
+test('Drag and Drop test',async({page})=>{
+    await page.goto("https://the-internet.herokuapp.com/");
+    await page.getByRole("link", { name: "Drag and Drop" }).click();
+    const source=page.locator('#column-a');
+    const target=page.locator('#column-b');
+    await source.dragTo(target);
+    await expect(source).toHaveText("B");
+    await expect(target).toHaveText("A");
+})
