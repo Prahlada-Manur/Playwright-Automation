@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -36,7 +36,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -52,7 +52,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "webkit",
         "name": "webkit",
@@ -102,13 +102,13 @@
   },
   "suites": [
     {
-      "title": "ddtJson.spec.ts",
-      "file": "ddtJson.spec.ts",
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Google search — searchValue: playwright",
+          "title": "Login test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -120,25 +120,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14898,
+                  "duration": 4655,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "prahlada is testing in qa environment\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-03-23T09:25:47.713Z",
+                  "startTime": "2026-03-24T04:56:48.592Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/Users/pmanur/Desktop/Prahlada/Playwright-Automation/test-results/ddtJson-Google-search-—-searchValue-playwright-chromium/trace.zip"
+                      "path": "/Users/pmanur/Desktop/Prahlada/Playwright-Automation/test-results/login-Login-test-chromium/trace.zip"
                     }
                   ]
                 }
@@ -146,63 +142,19 @@
               "status": "expected"
             }
           ],
-          "id": "3a504715c65624b84c04-94f434468b29bf6f97e4",
-          "file": "ddtJson.spec.ts",
-          "line": 5,
-          "column": 7
-        },
-        {
-          "title": "Google search — SearchValue2: selenium",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 6,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 14921,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "prahlada is testing in qa environment\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-03-23T09:25:47.713Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "/Users/pmanur/Desktop/Prahlada/Playwright-Automation/test-results/ddtJson-Google-search-—-SearchValue2-selenium-chromium/trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "3a504715c65624b84c04-b87d88c9994f5815df46",
-          "file": "ddtJson.spec.ts",
-          "line": 5,
-          "column": 7
+          "id": "41d3fd2474a19feb00a1-a4d46695e3116b2d8a11",
+          "file": "login.spec.ts",
+          "line": 4,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-23T09:25:46.812Z",
-    "duration": 16991.054000000004,
-    "expected": 2,
+    "startTime": "2026-03-24T04:56:47.779Z",
+    "duration": 6446.033999999985,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

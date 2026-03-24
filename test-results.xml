@@ -1,18 +1,9 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="16.991054000000005">
-<testsuite name="ddtJson.spec.ts" timestamp="2026-03-23T09:25:47.289Z" hostname="chromium" tests="2" failures="0" skipped="0" time="29.819" errors="0">
-<testcase name="Google search — searchValue: playwright" classname="ddtJson.spec.ts" time="14.898">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="6.446033999999985">
+<testsuite name="login.spec.ts" timestamp="2026-03-24T04:56:48.200Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.655" errors="0">
+<testcase name="Login test" classname="login.spec.ts" time="4.655">
 <system-out>
-<![CDATA[prahlada is testing in qa environment
-
-[[ATTACHMENT|test-results/ddtJson-Google-search-—-searchValue-playwright-chromium/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Google search — SearchValue2: selenium" classname="ddtJson.spec.ts" time="14.921">
-<system-out>
-<![CDATA[prahlada is testing in qa environment
-
-[[ATTACHMENT|test-results/ddtJson-Google-search-—-SearchValue2-selenium-chromium/trace.zip]]
+<![CDATA[
+[[ATTACHMENT|test-results/login-Login-test-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
